@@ -1,0 +1,144 @@
+/* Body text */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+
+
+
+#banner img {
+    width: 100%;
+    height: auto;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+.herotext {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+
+    font-size: 1.15em;
+    background-color: #26031A;
+}
+
+.vancity {
+    width: 60%;
+    height: auto;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.imgrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.image {
+    width: 450px;
+    height: auto;
+    padding: 0em 6em;
+
+}
+
+
+.textimg h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.content {
+    display: inline-block;
+    padding: 5em 0em;
+    width: 80%;
+}
+
+
+.resource {
+
+    padding: 3em 0em;
+
+    display: inline-block;
+    width: 80%;
+
+}
+
+.resource a:link {
+    color: rgb(106, 0, 255);
+}
+
+.resource a:hover {
+    color: #55D9D9;
+}
+
+
+
+
+#newsletter {
+    background-color: #A61F77;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px 20px 20px;
+    margin-bottom: -10px;
+}
+
+#newsletter p {
+    margin-top: -20px;
+}
+
+#newsletter form input[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #DAC2F2;
+    color: #A61F77;
+}
+
+#newsletter form input:hover[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #A61F77;
+    color: #DAC2F2;
+}
+
+.allcontent {
+    margin-bottom: 50px;
+    border-style: inset;
+    border-color: rgb(236, 161, 240);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(106, 0, 255), -1em 0 .4em rgb(128, 0, 98);
+    color: whitesmoke;
+    width: 80%;
+
+    margin: 6em auto;
+
+}

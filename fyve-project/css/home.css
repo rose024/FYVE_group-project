@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+
+body {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    background-color: #26031A;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+.logo img {
+    height: 300px;
+    margin-bottom: -100px;
+}
+
+#setlist img {
+    margin-top: 0%;
+    height: 400px;
+    width: 100%;
+}
+
+.photos img {
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+form input[type=submit] {
+    font-size: 1.4em;
+    border: none;
+    border-radius: 35px;
+    padding: 17px 60px;
+    background-color: #55d9d9;
+    color: #d9048e;
+    margin-top: 25px;
+}
+
+form input:hover[type=submit] {
+    font-size: 1.4em;
+    border: none;
+    border-radius: 35px;
+    padding: 17px 60px;
+    background-color: #d9048e;
+    color: #55d9d9;
+    margin-top: 25px;
+}
+
+.ticket {
+    background-color: #681577;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#paragraph {
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(106, 0, 255), -1em 0 .4em rgb(128, 0, 98);
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+   padding-top: 5px;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+}
+
+#paragraph h1 {
+ 
+}
+
+#paragraph p {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#top {
+    margin: 0px;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ticketpage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Ticket Page</title>
+
+    <meta name="description" content="Buy tickets for the hottest music festivals around the world. Find your favorite artists, dates and locations, and purchase tickets securely online.">
+    <meta name="keywords" content="FYVE, concert tickets, music festivals, festival tickets, buy tickets, online tickets">
+    <meta name="author" content="FYVE Team">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="navbar">
+            <a href="home.html"> <img src="img/fyvelogo.png" class="logo" alt="headerlogo"></a>
+
+            <a href="home.html" class="navitem">HOME</a>
+            <a href="ticketpage.html" class="navitem">TICKETS</a>
+            <a href="information-page.html" class="navitem">INFO</a>
+            <a href="about-ourstory.html" class="navitem">ABOUT US</a>
+            <a href="donation.html" class="navitem">DONATE</a>
+            <a href="contact.html" class="navitem">CONTACT US</a>
+            <a href="preventionpage.html" class="navitem">DRUG PREVENTION</a>
+
+            <div class="headerbutton">
+                <button type="button" class="button1" onclick="">SIGN IN</button>
+                <button type="button" class="button2" onclick="">SIGN UP</button>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div id="banner">
+        <img src="img/bannerticket.png" alt="img">
+
+    </div>
+
+    <h1>FYVE Festival Vancouver </h1>
+    <div id="Join" style="text-align: center;"> <input type="submit" value="Join Us"> </div>
+    <div id="box">
+        <img class="photo" src="img/1.jpg">
+        <h3>asasihad</h3>
+
+
+
+        <div class="column">
+
+            <h2>Kaytranada</h2>
+            <p>For Ages 19+ only </p>
+            <p> 123 Anywhere St. Vancouver, BC</p>
+            <p> February 28, 2023 <br> 13:00 - 16:00 </p>
+
+        </div>
+        <div class="column">
+            <div class="vl"></div>
+            <div class="share">
+                <p>Share with your friends!</p>
+            </div>
+            <div class="socmediad">
+                <a href="https://www.tiktok.com/"> <img src="img/tiktok.png"></a>
+                <a href="https://www.instagram.com/"> <img src="img/ig.png"></a>
+                <a href="https://twitter.com/home"> <img src="img/twt.png"></a>
+                <a href="https://www.youtube.com/"> <img src="img/yt.png"></a>
+            </div>
+        </div>
+        <div id="purchase">
+            <div class="tix">
+                <p> Ticket <br> X-Day General Admission Pass<br>
+                <p style="font-size: 0.6em">($54.99 FMF Fee + $25.00 Service Fee) </p>
+                </p><br>
+            </div>
+            <div class="prc">
+                <p> Price <br>CAD $79.99/each</p>
+            </div>
+            <label>
+                <p>Quantity
+                    <input type="number" id="qty" value="1" min="1" max="5">
+                </p>
+            </label>
+
+        </div>
+        <div id="payment">
+            <button onclick="myFunction()"> Add to Cart </button>
+
+            <div id="myDIV">
+
+                <div id="pay">
+                    <p> SECURE PAYMENT OPTIONS</p>
+
+                    <input type="button" value="Credit Card" id="Credit_Card" onclick="changecc()"
+                        style="background-color: #55d9d9">
+                    <input type="button" value="Paypal" id="Pay_Pal" onclick="changepp()">
+                    <input type="button" value="Google_Pay" id="Google_Pay" onclick="changegp()">
+                    <input type="button" value="Apple Pay" id="Apple_Pay" onclick="changeap()">
+                    <input type="button" value="Gift Card" id="Gift_Card" onclick="changegc()">
+
+
+                    <table>
+
+
+                        <label>
+                            <div class="cards">
+                                <form>
+                                    <tr>
+                                        <td> <input id="num" name type="number" placeholder="Credit Card Number*"
+                                                style="margin: 5px; width: 250px;" required /></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input id="ex" name type="text" placeholder="Expiry Date*" width="5px"
+                                                style="margin: 5px;width: 85px;" required />
+                                            <input id="cvv" name type="number" placeholder="CVV*" size="5px"
+                                                style="margin: 5px;width: 50px;" required />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input id="fname" name type="text" placeholder="Name on Card*" size="34px"
+                                                style="margin: 5px;" required /></td>
+                                    </tr>
+                            </div>
+                            </form>
+                        </label>
+
+
+                    </table><a href="ticketconfirmation.html">
+                        <input type="submit" value="Purchase"></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function changecc() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changepp() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changegp() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changeap() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changegc() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#55d9d9";
+        }
+
+    </script>
+
+</body>
+<footer>
+
+    <div id="newsletter">
+        <h2> Subscribe to our Newsletter! </h2>
+        <p> Stay updated to our latest news and get a sneak peek for future events. </p>
+
+        <div class="sub">
+            <span> Name</span>
+            <input id="fname" name type="text" placeholder="Enter your name here">
+            <span> &nbspE-mail</span>
+            <input id="email" name type="text" placeholder="Enter your e-mail here">
+            <a href="home.html">
+                <input type="button" value="Subscribe Now"></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="#">
+            <li><b> Mobile App </b></li>
+        </a>
+        <a href="#">
+            <li><b>Community</b> </li>
+        </a>
+        <a href="#">
+            <li><b> Blog </b> </li>
+        </a>
+
+        <div class="footerlogo">
+            <a href="home.html">
+                <img src="img/footerlogo.png"></a>
+        </div>
+
+        <a href="about-faq.html">
+            <li><b> FAQ</b> </li>
+        </a>
+        <a href="#">
+            <li><b> About Us</b> </li>
+        </a>
+        <a href="#">
+            <li><b> Resources </b></li>
+        </a>
+
+        <hr>
+
+        <div class="socmedia">
+            <a href="https://www.tiktok.com/"> <img src="img/tiktok.png"></a>
+            <a href="https://www.instagram.com/"> <img src="img/ig.png"></a>
+            <a href="https://twitter.com/home"> <img src="img/twt.png"></a>
+            <a href="https://www.youtube.com/"> <img src="img/yt.png"></a>
+        </div>
+
+        <div id="trademark">
+            <p> &copyFYVEfest, Inc. 2023. We love music! </p>
+        </div>
+    </div>
+
+</footer>
+
+</html>

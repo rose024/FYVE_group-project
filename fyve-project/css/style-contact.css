@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+body {
+  background-color: #230619;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.15em;
+}
+
+.banner {
+  width: 100%;
+}
+
+.title {
+  background-color: #dac2f2;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Add a background color and some padding around the form */
+.content {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #230619;
+  ;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.location {
+  display: inline-block;
+  width: 360px;
+  vertical-align: top;
+  padding-left: 50px;
+}
+
+.content .map {
+  width: 100%;
+}
+
+#ctt-form {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  max-width: 580px;
+}
+
+.ctt-h3 {
+  color: whitesmoke;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.content input[type=text],
+select,
+textarea {
+  width: 100%;
+  font-family: 'Jost', sans-serif;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+.content input[type=submit] {
+  background-color: #A61F77;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.content input[type=submit]:hover {
+  background-color: #55d9d9;
+}

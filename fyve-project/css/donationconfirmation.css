@@ -1,0 +1,240 @@
+/* Body text */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15em;
+
+    background-color: #26031A;
+}
+
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+.container1 h3 {
+    display: inline-block;
+    padding-right: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font: 2em 'Rubik', sans-serif;
+}
+
+.bannertext {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.container1 {
+    text-align: center;
+    padding: 2.5em 0em;
+    background-color: #DAC2F2;
+    margin-top: -1em;
+
+}
+
+
+
+.buttonleft {
+
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 1.25em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-right: 50px;
+    background-color: #55afd9;
+    color: #fff;
+
+    transition-duration: 0.4s;
+
+}
+
+
+.buttonleft:hover {
+    background-color: #3d048c;
+
+}
+
+
+
+
+.buttonright {
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 1.25em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background: #fff;
+    color: #55afd9;
+    border: 2.5px solid #55afd9;
+
+}
+
+
+.buttonright:hover {
+    border: 2.5px solid #3d048c;
+    color: #3d048c;
+
+
+}
+
+
+
+
+
+.sendtoemailbtn {
+    font-family: 'Rubik', sans-serif;
+
+    font-size: .8em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-right: 25px;
+    background-color: #55afd9;
+    color: #fff;
+
+    transition-duration: 0.4s;
+}
+
+
+.sendtoemailbtn:hover {
+    background-color: #3d048c;
+
+}
+
+
+.donationbuttons {
+    margin-top: 2em;
+
+}
+
+
+
+.thankyou {
+    margin-top: 5em;
+    width: 90%;
+}
+
+.printbtn {
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 0.8em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    background: #fff;
+    color: #55afd9;
+    border: 2.5px solid #55afd9;
+
+}
+
+.printbtn:hover {
+    border: 2.5px solid #3d048c;
+    color: #3d048c;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    height: 800px;
+    padding-top: 2em;
+    margin-left: 5em;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.lineup {
+    height: 600px;
+    width: auto;
+}
+
+.socials p {
+    display: inline-block;
+}
+
+.socials img {
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
+    float: right;
+    padding-left: 0.5em;
+}
+
+.container3 {
+    text-align: center;
+    background-color: #DAC2F2;
+    padding: 2.5em 0em;
+}
+
+.container3 p {
+    display: inline-block;
+    padding-right: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font: 1.5em 'Rubik', sans-serif;
+}
+
+#newsletter {
+    background-color: #A61F77;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px 20px 20px;
+    margin-bottom: -10px;
+}
+
+#newsletter p {
+    margin-top: -20px;
+}
+
+#newsletter form input[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #DAC2F2;
+    color: #A61F77;
+}
+
+#newsletter form input:hover[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #A61F77;
+    color: #DAC2F2;
+}
+
+.allcontent {
+    margin-bottom: 50px;
+    border-style: inset;
+    border-color: rgb(236, 161, 240);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(106, 0, 255), -1em 0 .4em rgb(128, 0, 98);
+    color: whitesmoke;
+    width: 60%;
+    margin: 6em auto;
+}
+
+h4 {
+    font-size: 2em;
+    text-align: center;
+}

@@ -1,0 +1,195 @@
+/* Font style */
+
+/* Headings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Buttons */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* Body text */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15em;
+    background-color: #26031A;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+.container1 {
+    margin-top: -1em;
+    text-align: center;
+    padding: 1.25em 0em;
+    background-color: #DAC2F2;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+h3 {
+    display: inline-block;
+    padding-right: 1.5em;
+    font-size: 1.6em;
+
+
+}
+
+.confirmation {
+    text-align: center;
+    background-color: #9379F2;
+    padding: 1.25em 0em;
+}
+
+.lineup {
+    margin-right: 4em;
+
+    transition: transform .25s;
+}
+
+.lineup:hover {
+    transform: scale(1.2);
+}
+
+.map {
+    width: 400px;
+    height: auto;
+}
+
+
+.text {
+
+    padding: 2.5em 0em;
+    width: 70%;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.column {
+    justify-content: center;
+    height: 650px;
+    padding-top: 4em;
+
+}
+
+.buttonleft {
+
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 1.25em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: #55afd9;
+    color: #fff;
+
+    transition-duration: 0.4s;
+
+}
+
+.buttonleft:hover {
+    background-color: #3d048c;
+
+
+
+}
+
+.buttonright {
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 1.25em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background: #fff;
+    color: #55afd9;
+    border: 2.5px solid #55afd9;
+
+}
+
+.buttonright:hover {
+    border: 2.5px solid #3d048c;
+    color: #3d048c;
+
+
+}
+
+.mapbutton {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #55afd9;
+    color: #fff;
+    transition-duration: 0.4s;
+    float: right;
+}
+
+.mapbutton:hover {
+    background-color: #3d048c;
+
+
+}
+
+#newsletter {
+    background-color: #A61F77;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px 20px 20px;
+    margin-bottom: -10px;
+}
+
+#newsletter p {
+    margin-top: -20px;
+}
+
+#newsletter form input[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #DAC2F2;
+    color: #A61F77;
+}
+
+#newsletter form input:hover[type=submit] {
+    font-size: 0.8em;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: #A61F77;
+    color: #DAC2F2;
+}
+
+.allcontent {
+    margin-bottom: 50px;
+    border-style: inset;
+    border-color: rgb(236, 161, 240);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(106, 0, 255), -1em 0 .4em rgb(128, 0, 98);
+    color: whitesmoke;
+
+    width: 80%;
+    margin: auto;
+
+    margin: 6em auto;
+
+
+
+}

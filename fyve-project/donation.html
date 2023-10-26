@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="css/donation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="img/favicon.ico">
+
+    <meta name="description" content="Buy tickets for the hottest music festivals around the world. Find your favorite artists, dates and locations, and purchase tickets securely online.">
+    <meta name="keywords" content="FYVE, concert tickets, music festivals, festival tickets, buy tickets, online tickets">
+    <meta name="author" content="FYVE Team">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+ 
+    <nav>
+
+        <div class="navbar">
+          <a href="home.html"> <img src="img/fyvelogo.png" class="logo" alt="headerlogo"></a>
+    
+          <a href="home.html" class="navitem">HOME</a>
+          <a href="ticketpage.html" class="navitem">TICKETS</a>
+          <a href="information-page.html" class="navitem">INFO</a>
+          <a href="about-ourstory.html" class="navitem">ABOUT US</a>
+          <a href="donation.html" class="navitem">DONATE</a>
+          <a href="contact.html" class="navitem">CONTACT US</a>
+          <a href="preventionpage.html" class="navitem">DRUG PREVENTION</a>
+    
+          <div class="headerbutton">
+            <button type="button" class="button1" onclick="">SIGN IN</button>
+            <button type="button" class="button2" onclick="">SIGN UP</button>
+          </div>
+    
+        </div>
+    
+      </nav>
+    
+    
+    
+    <div id="banner">
+        <img src="img/bannerdonate.png" alt="img">
+
+    </div>
+
+
+    <div class="top">
+        <p>Explanation of the purpose of the festival, the purpose of the donation, and the donation organization.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries. </p>
+    </div>
+    <div id="container">
+        <div class="title">
+            <h1> DONATION DETAILS</h1>
+        </div>
+
+        <div id="detail">
+            <div class="vl"></div>
+
+            <div class="column">
+
+                <form method="post" action="form.html">
+                    <div id="hm">
+                        <input type="button" value="Donate Once" id="once" onclick="changeonce()"
+                            style="background-color: #55d9d9;">
+                        <input type="button" value="Donate Monthly" id="monthly" onclick="changemonthly()">
+
+                    </div>
+                    <h3> Donate Amount </h3>
+                    <input type="button" value="$30" id="thirty" onclick="changethirty()"
+                        style="background-color: #55d9d9">
+                    <input type="button" value="$50" id="fifty" onclick="changefifty()">
+                    <input type="button" value="$100" id="hundred" onclick="changehundred()">
+                    <input type="button" value="$150" id="hundredfifty" onclick="changehundredfifty()">
+
+                    <div class="well">
+                        <table>
+                            <tbody>
+                                <td>$ <input id="test" size="8" value="30.00" required /></td>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <div class="column">
+                <h3> Select the organization you want to donate</h3>
+                <select id="dropdown" required />
+                <option value="">Choose an organization</option>
+                <option value="">Organization 1</option>
+                <option value="">Organization 2</option>
+                <option value="">Organization 3</option>
+                <option value="">Organization 4</option>
+                <option value="">Donate to a small organization</option>
+                <option value="">General Use</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="title">
+            <h1> DONOR & TAX RECEIPT INFORMATION </h1>
+        </div>
+        <div id="info">
+            <table>
+
+                <label>
+                    <tr>
+
+                        <td> <input id="email" name type="text" placeholder="E-mail*" size="43px" required /></td>
+                    </tr>
+                    <tr>
+                        <td> <input id="fname" name type="text" placeholder="First Name*" required />
+                            <input id="lname" name type="text" placeholder="Last Name*" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ADDRESS</td>
+                    </tr>
+                    <tr>
+                        <td> <input id="add1" name type="text" placeholder="Address Line 1*" size="43px" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input id="add2" name type="text" placeholder="Address Line 2(optional)" size="43px"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input id="city" name type="text" placeholder="City*" required />
+                            <select id="dropdown">
+                                <option value="">Canada</option>
+                                <option value="">USA</option>
+                                <option value="">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select id="dropdown" required />
+                            <option>Select Province</option>
+                            <option value="">Alberta</option>
+                            <option value="">British Columbia</option>
+                            <option value="">Manitoba</option>
+                            <option value="">New Brunswick</option>
+                            <option value="">Newfoundland and Labrador</option>
+                            <option value="">Nova Scotia</option>
+                            <option value="">Ontario</option>
+                            <option value="">Prince Edward Island </option>
+                            <option value="">Quebec</option>
+                            <option value="">Saskatchewan</option>
+                            <option value="">Other *not in Canada* </option>
+                            </select>
+                            <input id="pc" name type="text" placeholder="Postal Code*" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input id="phone" size="43px" name type="number" placeholder="Phone number (optional)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" id="scales" checked>
+                            <label for="ecomms">Yes, I’d like to a receive email communications from THE FYVE
+                                FEST</label>
+                        </td>
+                    </tr>
+                </label>
+
+            </table>
+        </div>
+        <div class="title">
+            <h1> PAYMENT INFORMATION </h1>
+        </div>
+        <div id="pay">
+            <p> SECURE PAYMENT OPTIONS</p>
+
+            <input type="button" value="Credit Card" id="Credit_Card" onclick="changecc()"
+                style="background-color: #55d9d9">
+            <input type="button" value="PayPal" id="Pay_Pal" onclick="changepp()">
+            <input type="button" value="Google Pay" id="Google_Pay" onclick="changegp()">
+            <input type="button" value="Apple Pay" id="Apple_Pay" onclick="changeap()">
+            <input type="button" value="Gift Card" id="Gift_Card" onclick="changegc()">
+
+            <table>
+
+                <label>
+                    <tr>
+                        <td> <input id="fname" name type="number" placeholder="Credit Card Number*"
+                                style="width: 270px;" size="43px" required /></td>
+                    </tr>
+                    <tr>
+                        <td> <input id="fname" name type="number" placeholder="Expiry Date*" min="1"
+                                style="width: 100px;" required />
+                            <input id="fname" name type="number" placeholder="CVV*" style="width: 60px;" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input id="fname" name type="text" placeholder="Name on Card*" size="35px" required /></td>
+                    </tr>
+                </label>
+
+            </table>
+        </div>
+
+        <div class="title">
+            <h1> DEDICATION INFORMATION </h1>
+        </div>
+
+        <div id="pay">
+            <input type="button" value="In honor of" id="iho" onclick="changeiho()">
+            <input type="button" value="In memory of" id="imo" onclick="changeimo()">
+            <input type="button" value="No dedication" id="nd" onclick="changend()" style="background-color: #55d9d9">
+
+            <input id="fname" name type="text" placeholder="Name (optional)" size="20px">
+        </div>
+
+        <div class="title">
+            <h1> ANONYMITY </h1>
+        </div>
+
+        <div id="anonymity">
+            <table>
+                <input type="checkbox" id="check" name="chck" checked>
+                <label for="ecomms" style="text-align: center;">Make my donation anonymous.</label>
+                <hr>
+                <td>
+                    <div class="confirmation_donation">
+                        <a href="donationconfirmation.html">
+                            <input type="submit" value="Confirm if donation is complete" required="required">
+                        </a>
+                    </div>
+                </td>
+            </table>
+            </form>
+            <div class="confirmation_donation">
+                <a href="donationconfirmation.html">
+                    <input type="submit" value="Complete Donation" required="required">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function changeonce() {
+            var element = document.getElementById("once");
+            element.style.backgroundColor = "#55d9d9";
+
+            var element = document.getElementById("monthly");
+            element.style.backgroundColor = "#d9048e";
+        }
+
+        function changemonthly() {
+            var element = document.getElementById("monthly");
+            element.style.backgroundColor = "#55d9d9";
+
+            var element = document.getElementById("once");
+            element.style.backgroundColor = "#d9048e";
+        }
+
+        function changethirty() {
+
+            var element = document.getElementById("thirty");
+            element.style.backgroundColor = "#55d9d9";
+
+            var element = document.getElementById("fifty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundred");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundredfifty");
+            element.style.backgroundColor = "#d9048e";
+
+            let num = document.getElementById("test").value = 30.00;
+            console.log(num);
+            document.querySelector("test").value = num;
+        }
+        function changefifty() {
+            var element = document.getElementById("thirty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("fifty");
+            element.style.backgroundColor = "#55d9d9";
+
+            var element = document.getElementById("hundred");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundredfifty");
+            element.style.backgroundColor = "#d9048e";
+
+            let num = document.getElementById("test").value = 50.00;
+
+            document.querySelector("test").value = num;
+        }
+        function changehundred() {
+            var element = document.getElementById("thirty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("fifty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundred");
+            element.style.backgroundColor = "#55d9d9";
+
+            var element = document.getElementById("hundredfifty");
+            element.style.backgroundColor = "#d9048e";
+
+            let num = document.getElementById("test").value = 100.00;
+
+            document.querySelector("test").value = num;
+        }
+        function changehundredfifty() {
+            var element = document.getElementById("thirty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("fifty");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundred");
+            element.style.backgroundColor = "#d9048e";
+
+            var element = document.getElementById("hundredfifty");
+            element.style.backgroundColor = "#55d9d9";
+
+
+            let num = document.getElementById("test").value = 150.00;
+            console.log(num);
+            document.querySelector("test").value = num;
+        }
+
+
+        function changecc() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#55d9d9";
+            // element.style.color = "#960362";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            // element.style.color = "#37cccc";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changepp() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changegp() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changeap() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changegc() {
+            var element = document.getElementById("Credit_Card");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Pay_Pal");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Google_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Apple_Pay");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("Gift_Card");
+            element.style.backgroundColor = "#55d9d9";
+        }
+        function changeimo() {
+            var element = document.getElementById("imo");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("iho");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("nd");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changeiho() {
+            var element = document.getElementById("imo");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("iho");
+            element.style.backgroundColor = "#55d9d9";
+            var element = document.getElementById("nd");
+            element.style.backgroundColor = "#d9048e";
+        }
+        function changend() {
+            var element = document.getElementById("imo");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("iho");
+            element.style.backgroundColor = "#d9048e";
+            var element = document.getElementById("nd");
+            element.style.backgroundColor = "#55d9d9";
+        }
+
+    </script>
+</body>
+<footer>
+
+    <div id="newsletter">
+        <h2> Subscribe to our Newsletter! </h2>
+        <p> Stay updated to our latest news and get a sneak peek for future events. </p>
+
+        <div class="sub">
+            <span> Name</span>
+            <input id="fname" name type="text" placeholder="Enter your name here">
+            <span> &nbspE-mail</span>
+            <input id="email" name type="text" placeholder="Enter your e-mail here">
+            <a href="home.html">
+                <input type="button" value="Subscribe Now"></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="#">
+            <li><b> Mobile App </b></li>
+        </a>
+        <a href="#">
+            <li><b>Community</b> </li>
+        </a>
+        <a href="#">
+            <li><b> Blog </b> </li>
+        </a>
+
+        <div class="footerlogo">
+            <a href="home.html">
+                <img src="img/footerlogo.png"></a>
+        </div>
+
+        <a href="about-faq.html">
+            <li><b> FAQ</b> </li>
+        </a>
+        <a href="about-ourstory.html">
+            <li><b> About Us</b> </li>
+        </a>
+        <a href="preventionpage.html">
+            <li><b> Resources </b></li>
+        </a>
+
+        <hr>
+
+        <div class="socmedia">
+            <a href="https://www.tiktok.com/"> <img src="img/tiktok.png"></a>
+            <a href="https://www.instagram.com/"> <img src="img/ig.png"></a>
+            <a href="https://twitter.com/home"> <img src="img/twt.png"></a>
+            <a href="https://www.youtube.com/"> <img src="img/yt.png"></a>
+        </div>
+
+        <div id="trademark">
+            <p> &copyFYVEfest, Inc. 2023. We love music! </p>
+        </div>
+    </div>
+
+</footer>
+
+</html>
